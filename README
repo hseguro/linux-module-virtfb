@@ -17,6 +17,6 @@ In virtual_fb source directory:
 Use:
 The kernel module takes a single argument vfbcount which is an integer
 number of virtual framebuffers which will be created. The default size of the
-framebuffers is 128x128 16bpp, but this can be reconfigured using fbset after
+framebuffers is 1280x720 16bpp, but this can be reconfigured using fbset after
 the module is loaded.
 
