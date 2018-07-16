@@ -384,7 +384,8 @@ static int virtfb_register(struct fb_info *fbi, unsigned int id)
 	sprintf(fbi->fix.id, "virt_fb%d", id);
 
 	//Setup small default resolution
-	fbi->var.xres_virtual = fbi->var.xres = fbi->var.yres_virtual = fbi->var.yres  = 128;
+	fbi->var.xres_virtual = fbi->var.xres = 1280;
+	fbi->var.yres_virtual = fbi->var.yres = 720;
 	fbi->var.bits_per_pixel = 16;
 
 	virtfb_check_var(&fbi->var, fbi);
